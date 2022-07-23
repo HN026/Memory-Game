@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #731DD8;
+    color: #fff;
+}
+
+.Score{
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: -7rem;
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+.Heading{
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+}
+
+.grid-center{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid{
+    /* border: 2px red solid; */
+    width: 900px;
+    height: 660px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.alpha{
+    margin: 4px;
+    border: 5px white solid;
+}
+
+@media screen and (max-width: 800px)
+{
+    .alpha{
+        height: 150px;
+        width: 150px;
+    }
+
+    .Heading{
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 400px)
+{
+    .alpha{
+        height: 100px;
+        width: 100px;
+    }
+
+    .Heading{
+        font-size: 1rem;
+    }
+
+    #grid{
+        width: 350px;
+        position: absolute;
+        transform: translateY(2rem);
+    }
+}
+
+
+@media screen and (max-width: 380px)
+{
+    .alpha{
+        height: 100px;
+        width: 100px;
+    }
+
+    .Heading{
+        font-size: 1rem;
+    }
+
+    #grid{
+        width: 350px;
+        position: absolute;
+        transform: translateY(6rem);
+    }
+}
